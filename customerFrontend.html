@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript" src="formChecker.js">
+		</script>
+		<link href="style.css" rel="stylesheet" type="text/css"/>
+	</head>
+	<body>
+		<form name="submitform" action="customerBackend.php" onsubmit="return validate()" method="post">
+			Username:
+			<input type="text" name="userName" >
+			<br>
+			Password:
+			<input type="text" name="password">
+			<br>
+		</br>
+		Apple ($2 each)
+		<input type="text" name="apple">
+		<br>
+		Banana ($3 each)
+		<input type="text" name="banana" >
+		<br>
+		Orange ($5 each)
+		<input type="text" name="orange" >
+		<br>
+		<br>
+		!!Choose shipping method!!
+		<br>
+		<input type="radio" name="shipping" value="0">
+		Free 7 day
+		<br>
+		<input type="radio" name="shipping" value="50">
+		$50.00 over night
+		<br>
+		<input type="radio" name="shipping" value="5">
+		$5.00 three day
+		<br>
+		<input type="button" value="Reset Form" onClick="this.form.reset()" />
+		<input type="submit" value="Submit Quiz">
+	</form>
+</body>
+</html>
